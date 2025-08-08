@@ -1,0 +1,270 @@
+/* 角色档案页面样式 */
+
+/* 页面标题 */
+.profile-header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.profile-header h2 {
+    font-family: var(--font-title);
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: var(--color-dark-gray);
+    background: linear-gradient(to right, var(--color-pink), var(--color-lake-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.profile-subtitle {
+    font-size: 1.2rem;
+    color: var(--color-dark-gray);
+    font-style: italic;
+}
+
+/* 角色切换区域 */
+.character-switch {
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.switch-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.switch-btn {
+    padding: 12px 30px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--color-dark-gray);
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.switch-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+.switch-btn.active {
+    background: linear-gradient(135deg, var(--color-pink), var(--color-lake-green));
+    color: var(--color-dark-gray);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 角色内容区域 */
+.character-content {
+    position: relative;
+    min-height: 500px;
+}
+
+.character-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 角色图片 */
+.character-image {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s ease;
+}
+
+.character-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.character-image:hover img {
+    transform: scale(1.03);
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.image-overlay.light {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.7), transparent);
+    color: var(--color-dark-gray);
+}
+
+.overlay-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* 莉路丝特殊效果 */
+.character-image.lilith img {
+    filter: brightness(1.1) contrast(0.95);
+}
+
+.character-image.lilith::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2), transparent 70%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* 角色信息 */
+.character-info {
+    flex: 2;
+    min-width: 300px;
+}
+
+.character-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--color-dark-gray);
+    border-bottom: 2px solid rgba(165, 214, 199, 0.3);
+    padding-bottom: 8px;
+}
+
+.info-list {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.info-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: baseline;
+}
+
+.info-list li span {
+    font-weight: 500;
+    margin-right: 10px;
+    min-width: 70px;
+}
+
+.character-description h3 {
+    font-size: 1.3rem;
+    margin: 25px 0 15px;
+    color: var(--color-dark-gray);
+}
+
+.character-description p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* 双重身份部分 */
+.duality-section {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 40px 0;
+}
+
+.duality-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: var(--color-dark-gray);
+}
+
+.duality-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.duality-item {
+    flex: 1;
+    min-width: 250px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.duality-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.duality-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.duality-icon.light {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.duality-icon.dark {
+    background-color: rgba(100, 100, 100, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.duality-icon.balance {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(100, 100, 100, 0.3));
+    box-shadow: 0 0 20px rgba(165, 214, 199, 0.5);
+}
+
+.duality-item h4 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--color-dark-gray);
+}
+
+.duality-item p {
+    line-height: 1.6;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .character-details {
+        flex-direction: column;
+    }
+    
+    .duality-content {
+        flex-direction: column;
+    }
+    
+    .duality-item {
+        margin-bottom: 20px;
+    }
+}

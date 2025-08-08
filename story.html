@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>故事与章节 - 丝维雅•柏蒂尔</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/story.css">
+</head>
+<body>
+    <div class="stars-container">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="profile.html">角色档案</a></li>
+                    <li><a href="quotes.html">语录展示</a></li>
+                    <li><a href="relationships.html">角色关系</a></li>
+                    <li><a href="story.html" class="active">故事与章节</a></li>
+                    <li><a href="world.html">世界观与背景</a></li>
+                    <li><a href="gallery.html">图集展示</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="story-timeline glass-panel">
+                <h3>故事时间线</h3>
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- 时间线节点1 -->
+                    <div class="timeline-node" data-chapter="creation">
+                        <div class="node-dot"></div>
+                        <div class="node-content">
+                            <h4>天堂祈祷</h4>
+                            <p class="node-date">主的创造</p>
+                            <p class="node-desc">丝维雅作为天使被创造，但是...</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 时间线节点2 -->
+                    <div class="timeline-node" data-chapter="plague">
+                        <div class="node-dot"></div>
+                        <div class="node-content">
+                            <h4>病体灼圣</h4>
+                            <p class="node-date">人类纪元初期</p>
+                            <p class="node-desc">人间爆发瘟疫，丝维雅主动承接病原体</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 时间线节点3 -->
+                    <div class="timeline-node" data-chapter="fall">
+                        <div class="node-dot"></div>
+                        <div class="node-content">
+                            <h4>光暗交错</h4>
+                            <p class="node-date">人类纪元中期</p>
+                            <p class="node-desc">丝维雅因承接瘟疫而堕落，从天堂坠落</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 时间线节点4 -->
+                    <div class="timeline-node" data-chapter="lilith">
+                        <div class="node-dot"></div>
+                        <div class="node-content">
+                            <h4>堕落无信</h4>
+                            <p class="node-date">堕落之后</p>
+                            <p class="node-desc">神明创造莉路丝作为丝维雅的镜像，防止她彻底堕落</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 时间线节点5 -->
+                    <div class="timeline-node" data-chapter="observer">
+                        <div class="node-dot"></div>
+                        <div class="node-content">
+                            <h4>第七瘟疫的症状</h4>
+                            <p class="node-date">无题</p>
+                            <p class="node-desc">苦难与救赎</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="chapter-details glass-panel">
+                <h3>章节详情</h3>
+                
+                <!-- 章节1：创造之初 -->
+                <div class="chapter-panel active" id="creation-panel">
+                    <div class="chapter-image creation"></div>
+                    <div class="chapter-content">
+                        <h4>第一章：天堂祈祷</h4>
+                        <div class="chapter-meta">
+                            <span class="chapter-time">天地初开</span>
+                            <span class="chapter-location">天堂</span>
+                        </div>
+                        
+                        <div class="chapter-summary">
+                            <p>丝维雅是主创造的天使，不算出众，却象征人间的瘟疫与药物。</p>
+                            <p>她揭开了天使遗忘之症的真相，调和了天使与恶魔的紧张关系。</p>
+                            <p>她本可以如其他天使般，每日祈祷、歌颂，过着简单生活，但主创造她时，便有了别样的安排。</p>
+                        </div>
+                        
+                        <div class="chapter-quote">
+                            <blockquote>
+                                "我曾以为天堂的光芒永远不会褪色，直到我看清了人间的黑暗。"
+                            </blockquote>
+                        </div>
+                        
+                        <div class="chapter-themes">
+                            <h5>主题探索</h5>
+                            <ul>
+                                <li>天使的本质与使命</li>
+                                <li>对神明旨意的信仰与服从</li>
+                                <li>对人类的好奇与关注</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 章节2：瘟疫降临 -->
+                <div class="chapter-panel" id="plague-panel">
+                    <div class="chapter-image plague"></div>
+                    <div class="chapter-content">
+                        <h4>第二章：病体灼圣</h4>
+                        <div class="chapter-meta">
+                            <span class="chapter-time">人类纪元初期</span>
+                            <span class="chapter-location">人间</span>
+                        </div>
+                        
+                        <div class="chapter-summary">
+                            <p>丝维雅被派往人间荒废教堂，为其祈祷、重燃烛火，传扬主的伟力与关怀。而这座教堂下，封压着无数因瘟疫消散的恶魔。</p>
+                            <p>它们一拥而上，爬满她的脊背与翅膀，剥裂她的皮肉，腐蚀她的灵体——毒纹顺着皮肤蔓延，黑雾钻进她的眼瞳。伤口刚愈合便被再次扯裂，在反复的剧痛中，她第一对银灰羽翼渐失光泽，下一对雪白翅膀染成浓黑。</p>
+                            <p>最终，第七瘟疫的病原体钻入骨髓。这便是主的安排：为瘟疫寻一个容器，一个“替罪羊”</p>
+                        </div>
+                        
+                        <div class="chapter-quote">
+                            <blockquote>
+                                "当连最慈悲的天使都堕落时，高耸的神殿将崩塌。"
+                            </blockquote>
+                        </div>
+                        
+                        <div class="chapter-themes">
+                            <h5>主题探索</h5>
+                            <ul>
+                                <li>牺牲与救赎</li>
+                                <li>对神明旨意的质疑</li>
+                                <li>善恶的界限与选择</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 章节3：堕落伊始 -->
+                <div class="chapter-panel" id="fall-panel">
+                    <div class="chapter-image fall"></div>
+                    <div class="chapter-content">
+                        <h4>第三章：光暗交错</h4>
+                        <div class="chapter-meta">
+                            <span class="chapter-time">人类纪元中期</span>
+                            <span class="chapter-location">天堂与地狱之间</span>
+                        </div>
+                        
+                        <div class="chapter-summary">
+                            <p>被侵蚀的躯体成了原罪的证明。其他天使远远绕开她，羽翼扇动的风里带着嫌恶的低语——“被恶魔玷污的存在”“主的弃子”。</p>
+                            <p>曾经的祈祷声变成刺向她的尖刃，同类的排挤像藤蔓缠紧咽喉，</p>
+                            <p>她望着云端那些圣洁的身影，忽然觉得主的“安排”里，从没有给她留过容身之地。</p>
+                        </div>
+                        
+                        <div class="chapter-quote">
+                            <blockquote>
+                                "若是连治愈天使都已无法忍受人心，天使的意义是什么？"
+                            </blockquote>
+                        </div>
+                        
+                        <div class="chapter-themes">
+                            <h5>主题探索</h5>
+                            <ul>
+                                <li>身份的转变与认同</li>
+                                <li>痛苦作为惩罚与提醒</li>
+                                <li>边缘存在的孤独与思考</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 章节4：莉路丝的诞生 -->
+                <div class="chapter-panel" id="lilith-panel">
+                    <div class="chapter-image lilith"></div>
+                    <div class="chapter-content">
+                        <h4>第四章：第七瘟疫的症状</h4>
+                        <div class="chapter-meta">
+                            <span class="chapter-time">堕落之后</span>
+                            <span class="chapter-location">天堂</span>
+                        </div>
+                        
+                        <div class="chapter-summary">
+                            <p>丝维雅的银发总沾着未干的血珠，像碎星坠落在腐殖土里。那双绿眼睛本该盛着圣泉，此刻却浮着层浑浊的雾气。发病的时候总带着腥甜的暖意。像指尖拂过她锁骨处的空洞，那里立刻涌出粉白色的肉芽，像受潮的霉菌疯狂攀附，把露着森白骨茬的缺口堵得满满当当。新生的皮肉下有什么在蠕动，她低头时能看见皮肤表面凸起蜿蜒的血管，像一群被困在薄冰下的毒蛇。凌晨时分它顺着齿缝渗出来，在她心口钻开个硬币大的洞。她听见自己肋骨间传来细碎的剥落声，新长的血肉像烂掉的苹果皮般卷曲脱落，露出下面深不见底的黑。那些曾被爱补上的地方最容易裂开，旧伤口的边缘泛着青紫色，像被强酸浸泡过的布料，一碰就簌簌往下掉渣。她背后的羽翼总在愈合与溃烂间反复。右翼第三根羽毛根部结着暗红的痂，痂下却不断渗出淡黄色的脓水，把羽毛染成肮脏的琥珀色；左翼的羽毛倒是长得飞快，只是新羽管里没有绒毛，而是塞满了纠缠的肉丝，风一吹就发出细碎的断裂声。</p>
+                            <p>“又裂开了啊。”丝维雅对着铜镜轻笑，指尖戳了戳脸颊上新添的空洞，能感觉到气流从洞里穿进穿出，带着肺叶里铁锈般的气息。镜中的倒影突然咧嘴，露出尖细的牙齿，从她颧骨的空洞里探进舌头，舔舐着边缘腐烂的血肉。在她手腕的空洞里种出细碎的肉花，花瓣边缘泛着不健康的粉红；恨也没停歇，正从她脚踝的伤口里爬出白色的蛆虫，那些虫子啃食腐肉的声音，像极了天使颂歌里被忽略的杂音。她站在光与影的交界处，看着自己的身体在完整与破碎间反复横跳，银发上的血珠滴落地面，开出转瞬即逝的、带着獠牙的花。因为我们都讨厌那所谓的圣洁，所谓的正义，所谓的善良，所谓的自愿。</p>
+                            <p>再一次是懵懂与重复中轮回，权力与腐蚀中穿梭。脆弱，敏感，像茉莉花瓣一样易碎，却在凋零前，把所有的温柔都酿成了关于未来的誓言，在每个茉莉盛开的夏天，就算盛夏不为病花儿照。无可奈何，无可避免，无可救药，无可替代，这是主对我说的正义的真理。</p>
+                        </div>
+                        
+                        <div class="chapter-quote">
+                            <blockquote>
+                                "我们是彼此的镜像，却又是完全不同的个体。我们共享一个灵魂，却拥有各自的思想和情感。"
+                            </blockquote>
+                        </div>
+                        
+                        <div class="chapter-themes">
+                            <h5>主题探索</h5>
+                            <ul>
+                                <li>二元性与互补</li>
+                                <li>灵魂的分裂与统一</li>
+                                <li>光明与黑暗的共存</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 章节5：观察者的使命 -->
+                <div class="chapter-panel" id="observer-panel">
+                    <div class="chapter-image observer"></div>
+                    <div class="chapter-content">
+                        <h4>第五章：观察者的使命</h4>
+                        <div class="chapter-meta">
+                            <span class="chapter-time">现代</span>
+                            <span class="chapter-location">人间</span>
+                        </div>
+                        
+                        <div class="chapter-summary">
+                            <p>在现代，丝维雅成为了"天使堕落的观察者"。她不再直接干预人类的命运，而是观察、记录和思考。她关注人类的生活、情感和挣扎，对他们既有怜悯，也有理解。她的堕落使她更能理解人类的软弱和矛盾。</p>
+                            <p>丝维雅以观察者的身份关注人类，她不干预人类的命运，但记录和思考人类的选择和行为。这种观察使她对人类有着比其他天使或恶魔更深入的理解。她看到了人类的善良和邪恶，勇气和怯懦，爱与恨，这使她对善恶的界限有了更复杂的理解。</p>
+                            <p>在这一时期，丝维雅的存在质疑了天堂与地狱的二元对立，提出了一种可能：即使是最纯洁的天使也可能堕落，而堕落并不一定意味着邪恶。她的故事是对传统神学的一种反思，探讨了善恶、纯洁与堕落的复杂性。她的使命不再是服从或反抗，而是理解和见证。</p>
+                        </div>
+                        
+                        <div class="chapter-quote">
+                            <blockquote>
+                                "如果你能走过暗淡无光的黑夜，看见黎明，那神明为何叹息？"
+                            </blockquote>
+                        </div>
+                        
+                        <div class="chapter-themes">
+                            <h5>主题探索</h5>
+                            <ul>
+                                <li>观察与理解的力量</li>
+                                <li>超越二元对立的思考</li>
+                                <li>在边缘处寻找意义</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="glass-panel">
+            <div class="footer-content">
+                <p>&copy; oc 丝维雅•柏蒂尔 角色展示网站</p>
+                <p class="footer-quote">"如果你能走过暗淡无光的黑夜，看见黎明，那神明为何叹息？"</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 时间线节点点击事件
+            const timelineNodes = document.querySelectorAll('.timeline-node');
+            const chapterPanels = document.querySelectorAll('.chapter-panel');
+            
+            timelineNodes.forEach(node => {
+                node.addEventListener('click', function() {
+                    // 获取章节ID
+                    const chapterId = this.getAttribute('data-chapter');
+                    
+                    // 移除所有节点的活动状态
+                    timelineNodes.forEach(n => n.classList.remove('active'));
+                    // 添加当前节点的活动状态
+                    this.classList.add('active');
+                    
+                    // 隐藏所有章节面板
+                    chapterPanels.forEach(panel => panel.classList.remove('active'));
+                    
+                    // 显示对应的章节面板
+                    document.getElementById(chapterId + '-panel').classList.add('active');
+                    
+                    // 滚动到章节详情部分
+                    document.querySelector('.chapter-details').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // 初始化第一个节点为活动状态
+            timelineNodes[0].classList.add('active');
+            
+            // 添加滚动动画
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            // 观察时间线节点
+            timelineNodes.forEach(node => {
+                observer.observe(node);
+            });
+            
+            // 观察章节面板
+            chapterPanels.forEach(panel => {
+                observer.observe(panel);
+            });
+        });
+    </script>
+</body>
+</html>

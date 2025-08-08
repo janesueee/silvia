@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>角色档案 - 丝维雅•柏蒂尔</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <div class="stars-container">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="profile.html" class="active">角色档案</a></li>
+                    <li><a href="quotes.html">语录展示</a></li>
+                    <li><a href="relationships.html">角色关系</a></li>
+                    <li><a href="story.html">故事与章节</a></li>
+                    <li><a href="world.html">世界观与背景</a></li>
+                    <li><a href="gallery.html">图集展示</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="character-switch glass-panel">
+                <div class="switch-buttons">
+                    <button id="silvia-btn" class="switch-btn active">丝维雅</button>
+                    <button id="lilith-btn" class="switch-btn">莉路丝</button>
+                </div>
+                
+                <div class="character-content">
+                    <!-- 丝维雅内容 -->
+                    <div id="silvia-content" class="character-details">
+                        <div class="character-image">
+                            <img src="images/丝维雅柏蒂尔立绘.png" alt="丝维雅•柏蒂尔">
+                            <div class="image-overlay">
+                                <div class="overlay-text">堕天使</div>
+                            </div>
+                        </div>
+                        
+                        <div class="character-info">
+                            <h3>基本信息</h3>
+                            <ul class="info-list">
+                                <li><span>名称：</span>丝维雅•柏蒂尔</li>
+                                <li><span>性别：</span>无性别（默认为女）</li>
+                                <li><span>年龄：</span>未知</li>
+                                <li><span>种族：</span>貌似天使</li>
+                                <li><span>职业：</span>天使/堕天使</li>
+                                <li><span>身份：</span>绝对的观察者</li>
+                            </ul>
+                            
+                            <div class="character-description">
+                                <h3>形象特征</h3>
+                                <p>丝维雅•柏蒂尔拥有柔顺的银白色到腰的长发，发梢深灰，如月光被阴影侵蚀。瞳色是湖绿色，偏浅。四肢白皙修长，身材偏瘦。有四翼，两翼为白色，其它为银灰色。厌世眼，高高的颧骨，挺拔的鼻梁，面上一般是泛着病态的白。</p>
+                                
+                                <h3>细节描述</h3>
+                                <p>银白长发泛着珍珠光泽，发梢深灰，如月光被阴影侵蚀。天使面色苍白如釉面瓷器；堕落后颧骨处浮现蝶形淡紫色纹路，类似陈旧伤痕。同时承载"智慧"与"治愈"的职责，但同时象征瘟疫形成微讽刺性反差。</p>
+                                
+                                <h3>堕落原因</h3>
+                                <p>并非因反叛神，而是主动承接了某场瘟疫的病原体（类似"替罪羊"），导致灵体被污染。天使的翅膀本无触觉，但丝维雅被赋予了"痛觉"—每当她产生强烈情绪（无论爱或恨），羽翼根部就会传来灼烧般的痛感，成为永恒的惩罚与提醒。</p>
+                                
+                                <h3>特殊设定</h3>
+                                <p>四翼形态异类——天堂其他天使视其银灰翼"不纯净的烙印"，而地狱恶魔则将其白羽视为"虚伪的救赎"，使其处于两面不讨好的边缘地带。作为前上位天使助理（乌列尔、拉斐尔），堕落后，其存在本身打破了"上位天使不会堕落"的设定，暗示天堂阶级体系的脆弱性。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 莉路丝内容 -->
+                    <div id="lilith-content" class="character-details" style="display: none;">
+                        <div class="character-image lilith">
+                            <img src="images/丝维雅柏蒂尔立绘.png" alt="莉路丝">
+                            <div class="image-overlay light">
+                                <div class="overlay-text">天使</div>
+                            </div>
+                        </div>
+                        
+                        <div class="character-info">
+                            <h3>基本信息</h3>
+                            <ul class="info-list">
+                                <li><span>名称：</span>莉路丝</li>
+                                <li><span>性别：</span>无性别（默认为女）</li>
+                                <li><span>年龄：</span>未知</li>
+                                <li><span>种族：</span>天使</li>
+                                <li><span>职业：</span>天使</li>
+                                <li><span>身份：</span>丝维雅的"光明面"</li>
+                            </ul>
+                            
+                            <div class="character-description">
+                                <h3>形象特征</h3>
+                                <p>莉路丝作为丝维雅的"镜像"，拥有相似的外貌特征，但气质截然不同。她的银白色长发更加明亮纯净，没有深灰的发梢。瞳色同样是湖绿色，但更加明亮清澈。四翼全为纯白色，象征着纯洁无瑕。</p>
+                                
+                                <h3>细节描述</h3>
+                                <p>莉路丝的丝带是由生命之树的枝条编织，永不枯萎。表面活泼合群，实际难找到真正的知己，会捏制没有面孔的人偶，象征"无法触及的真实连接"。而这些人偶象征着人间孤独，无法被理解的人们。</p>
+                                
+                                <h3>存在意义</h3>
+                                <p>作为丝维雅的"光明面"，其存在或许是神为了防止丝维雅彻底堕落而创造的镜像。雕刻时会故意在作品隐蔽处留下瑕疵：比如天使雕像的羽翼少刻一根主羽，油画风景的云层里藏着扭曲的人脸。她声称"完美是神的特权"。</p>
+                                
+                                <h3>与丝维雅的关系</h3>
+                                <p>他们是两个完全不同的意识体，但是丝维雅和莉路丝共用一个灵体，所以当丝维雅主管的载体死亡时，莉路丝苏醒，唤醒了自己主管的载体，但丝维雅与他同在，所以有时，你们会在莉路丝的身上可以丝维雅的影子。但是他们属于对方，但是他们共用了一个灵体，所以也像同一个人，不过他们有自己的想法和风格。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="duality-section glass-panel">
+                <h3>双重身份的象征</h3>
+                <div class="duality-content">
+                    <div class="duality-item">
+                        <div class="duality-icon light"></div>
+                        <h4>光明面</h4>
+                        <p>莉路丝代表着天使的纯洁与神圣，象征着治愈与智慧的光明面。她保持着对神明的忠诚，尽管内心深处也有着对完美的质疑。</p>
+                    </div>
+                    <div class="duality-item">
+                        <div class="duality-icon dark"></div>
+                        <h4>黑暗面</h4>
+                        <p>丝维雅代表着堕落后的觉醒与反思，承载着瘟疫的痛苦，却也因此获得了更深刻的洞察力，看透了天堂与地狱的本质。</p>
+                    </div>
+                    <div class="duality-item">
+                        <div class="duality-icon balance"></div>
+                        <h4>平衡之道</h4>
+                        <p>两个意识体共享一个灵魂，轮流主导各自的载体，象征着光明与黑暗的平衡，完美与缺陷的共存，是对神明创造的最大反思。</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="glass-panel">
+            <div class="footer-content">
+                <p>&copy; oc 丝维雅•柏蒂尔 角色展示网站</p>
+                <p class="footer-quote">与众天使同生，死于寂静，她的故事潦草寂静，无聊，没有什么使命，只是消除灾祸的成载体</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // 初始化角色切换功能
+        document.addEventListener('DOMContentLoaded', function() {
+            initCharacterSwitch();
+        });
+    </script>
+</body>
+</html>
